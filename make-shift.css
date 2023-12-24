@@ -258,7 +258,7 @@ nav a{
 @media(max-width: 768px){
     #myVid{display: none;}
     .banner{
-        background-image: url(images/phone.png);
+        background-image: url(images/phone.avif);
         background-position: center bottom;
         background-size: cover;
     }
