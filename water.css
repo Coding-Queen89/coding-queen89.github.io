@@ -713,6 +713,10 @@ p{
     transition: 0.3s ease-in;
 }
 @media (max-width: 750px){
+    .contentBx .card .imgBx{
+        width: 120px;
+        height: 80px;
+    }
     .container .icon .imgBx{
         width: 50px;
         height: 50px;
@@ -730,6 +734,10 @@ p{
     }
     .content::after{
         inset: 40px;
+    }
+    .contentBx .card .textBx p{
+        font-size: 1.5rem;
+        line-height: 1.2rem;
     }
 }
 .custom-shape-divider-top-1703018325 {
