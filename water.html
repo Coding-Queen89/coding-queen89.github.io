@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <div id="preloader"></div>
     <header>
         <nav class="nav-bar">
             <!-- <div class="contain"> -->
@@ -507,5 +508,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
 <script src="script.js"></script>
 <script type="module" src="3D.js"></script>
-
+<script>
+    var loader = document.getElementById('preloader');
+    window.addEventListener("load", function(){
+        loader.style.display = 'none';
+    })
+</script>
 </html>
