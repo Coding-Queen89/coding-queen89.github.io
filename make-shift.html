@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <div id="preloader"></div>
     <header>
         <div class="container">
             <a href=""><img src="images/logo.png" alt="" loading="lazy"></a>
@@ -453,6 +454,12 @@
     <script src="main.js"></script>
     <script src="particles.min.js"></script>
     <script src="app.js"></script>
+    <script>
+        var loader = document.getElementById('preloader');
+        window.addEventListener("load", function(){
+            loader.style.display = 'none';
+        })
+    </script>
 </body>
 
 </html>
