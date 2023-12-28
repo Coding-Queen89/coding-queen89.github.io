@@ -172,18 +172,17 @@ header {
     left: 0;
     width: 100%;
     z-index: 99;
-
-    .container {
-        padding-top: 8px;
-        padding-bottom: 3px;
-        display: flex;
-        justify-content: space-between;
-        align-items:center;
-        transition: .3s;
-        opacity: 0;
-        animation: slideTop .5s ease forwards;
-        animation-delay: calc(0.2s*var(--i));
-    }
+}
+header .container {
+    padding-top: 8px;
+    padding-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(0.2s*var(--i));
 }
 @keyframes slideTop {
     0% {
