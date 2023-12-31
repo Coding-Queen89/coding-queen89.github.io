@@ -62,7 +62,7 @@ const generateResponse = (incomingChatLi) => {
         //We will add some style to the error message. One Occurrence of it is
         // when browser is offline. Inspect -> Network -> Throttling -> Offline
         messageElement.classList.add("error");
-        messageElement.textContent = "Oops! Something went wrong. Please, try again.";
+        messageElement.textContent = "I am sad right now!! Contact Neemo to make me happy again!";
     }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
     //We want the above respons in the chatbox.
 }
@@ -83,7 +83,7 @@ const handleChat = () => {
     //This is for the bot "thinking..." hehe
     setTimeout(() => {
         // Display "Thinking..." message while waiting fo the response
-        const incomingChatLi = createChatLi("Thinking...", "incoming")
+        const incomingChatLi = createChatLi("Analyzing...", "incoming")
         chatbox.appendChild(incomingChatLi);
         chatbox.scrollTo(0, chatbox.scrollHeight);
         generateResponse(incomingChatLi);
