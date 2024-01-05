@@ -1,10 +1,19 @@
+var lastScrollTop = 0;
 window.onload = function(){
+    var navbar = document.querySelector("header");
     window.addEventListener('scroll',function(e){
-        if(window.pageYOffset >100){
-            document.querySelector("header").classList.add('is-scrolling');
+        if(window.pageYOffset > 10){
+            navbar.classList.add('is-scrolling');
         } else{
-            document.querySelector("header").classList.remove('is-scrolling');
+            navbar.classList.remove('is-scrolling');
         }
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrollTop > lastScrollTop){
+            navbar.style.top = "-100px";
+        }else{
+            navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
     });
 
     const menu_btn = document.querySelector('.hamburger');

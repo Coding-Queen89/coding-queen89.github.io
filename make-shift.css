@@ -12,8 +12,8 @@ html{
 }
 #preloader{
     background: #000435 url(images/loader.gif) no-repeat center;
-    background-size: 35%;
-    height: 100vh;
+    background-size: 8%;
+    height: 100%;
     width: 100%;
     position: fixed;
     z-index: 100000000000000000000000;
@@ -184,6 +184,7 @@ li.move-right{
 header {
     color: white;
     position: fixed;
+    transition: 1s;
     top: 0;
     left: 0;
     width: 100%;
@@ -221,6 +222,9 @@ header .container {
     .container{
         padding-top: 8px;
         padding-bottom: 3px;
+    }
+    .navlist a{
+        color: #f6f7f7;
     }
 }
 /* .container h2 {
@@ -410,6 +414,7 @@ nav a{
     color: black;
     padding: 13px 20px;
     margin-left: 12px;
+    margin-bottom: 40px;
     font-size: 21px;
     background-color: #F6F7F7;
     position: relative;
