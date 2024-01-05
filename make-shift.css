@@ -191,8 +191,8 @@ header {
     z-index: 99;
 }
 header .container {
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -414,7 +414,6 @@ nav a{
     color: black;
     padding: 13px 20px;
     margin-left: 12px;
-    margin-bottom: 40px;
     font-size: 21px;
     background-color: #F6F7F7;
     position: relative;
