@@ -899,3 +899,127 @@ footer{
 .line{
     background-image: url(line.svg);
 }
+/* -----------footer--------------------- */
+
+.cntr {
+    max-width: 1170px;
+    margin: auto;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.custom-shape-divider-top-1702675678 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1702675678 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 59px;
+}
+
+.custom-shape-divider-top-1702675678 .shape-fill {
+    fill: #b2b5ba;
+}
+
+.footer {
+    background-color: #000435;
+    padding: 2px 0;
+    position: relative;
+    line-height: 1.5;
+}
+
+.cntr .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foter-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.foter-col h4 {
+    font-size: 34px;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 59px;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.foter-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #156b6b;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.foter-col h4 ul li:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.foter-col ul li a {
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    padding-top: 13px;
+    transition: all 0.3s ease;
+}
+
+.foter-col ul li a:hover {
+    color: lightskyblue;
+    padding-left: 8px;
+}
+
+.foter-col .social-links {
+    line-height: 50px;
+}
+
+.foter-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    font-size: 20px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.foter-col .social-links a:hover {
+    color: #24262b;
+    background-color: white;
+}
+
+@media(max-width: 1000px) {
+    .foter-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .foter-col {
+        width: 100%;
+        align-items: center;
+    }
+}
