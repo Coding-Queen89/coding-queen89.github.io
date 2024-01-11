@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 .chatbot, .chatbot-toggler{
     z-index: 999999;
@@ -455,6 +455,7 @@ nav a{
     color: black;
     padding: 13px 20px;
     margin-left: 12px;
+    margin-bottom: 40px;
     font-size: 21px;
     background-color: #F6F7F7;
     position: relative;
@@ -497,6 +498,7 @@ nav a{
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    align-items: center;
     position: relative;
     background-color: #92A4A8;
     padding-left: 50px;
@@ -510,9 +512,8 @@ nav a{
     justify-content: flex-start;
     overflow: wrap;
     height: 100%;
-    width: 100%;
     max-width: 1600px;
-    margin: auto;
+    margin-right: 30px;
     margin-top: 80px;
     margin-bottom: 80px;
 
@@ -797,11 +798,14 @@ nav a{
     transition: 0.3s ease-in;
 }
 @media (max-width: 900px){
+    .ad .container{
+        margin-left: 0px;
+    }
     .ad .container .icon{
         left: -60%;
     }
 }
-@media (max-width: 750px){
+@media (max-width: 900px){
     .contentBx .card .imgBx{
         width: 120px;
         height: 80px;
@@ -814,7 +818,7 @@ nav a{
     .ad .container{
         width: 80vw;
         height: 80vw;
-        margin-left: auto;
+        margin-left: 0px;
     }
     .contentBx .card .textBx h2{
         font-size: 1.5rem;
@@ -876,7 +880,8 @@ nav a{
 @media (max-width: 1080px){
     .why-us{
         padding: 2%;
-        display: block;
+        flex-direction: column;
+
     }
     .why-us h1{
         padding-top: 1.4rem;
