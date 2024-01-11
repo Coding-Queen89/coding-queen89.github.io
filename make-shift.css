@@ -21,27 +21,68 @@ html{
 body{
     overflow-x: hidden;
 }
-h3{
-    color: white;
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 4rem;
-    padding-bottom: 1.2rem;
-    letter-spacing: -0.5px;
-}
-h2{
+h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+    padding-bottom: 1.4rem;
+    padding-top: 1.4rem;
+    letter-spacing: -1px;
     color: #000435;
+}
+
+h2 {
+    color: #24262b;
     font-size: 4rem;
     font-weight: 700;
     line-height: 5rem;
     padding-bottom: 1.3rem;
+    padding-top: 1.3rem;
     letter-spacing: -0.5px;
 }
-p{
+
+h3 {
+    color: #2C3E53;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4rem;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+    letter-spacing: -0.5px;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    padding-bottom: 1.1rem;
+    letter-spacing: -0.5px;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 450;
+    line-height: 2.5rem;
+    padding-bottom: 1.05rem;
+    letter-spacing: 0.5px;
+}
+
+p,
+.normal {
     font-size: 2rem;
     color: #24262b;
-    line-height:2.8rem;
-
+    line-height: 2.8rem;
+    text-align: justify;
+    text-decoration: none;
+    width: 100%;
+}
+.dental-lists {
+    list-style-image: url(images/bullet\ \(2\).png);
+    padding-left: 50px;
+    font-size: 2rem;
+    line-height: 2.8rem;
+}
+.dental-lists li{
+    padding-top: 1rem;
 }
 .navlist{
     display: flex;
@@ -454,15 +495,20 @@ nav a{
 }
 .why-us{
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
     position: relative;
     background-color: #92A4A8;
     padding-left: 50px;
     padding-right: 50px;
 }
+.why-us h1{
+    padding-top: 80px;
+}
 .ad{
     display:flex;
+    justify-content: flex-start;
     overflow: wrap;
-    border: thin solid #fff;
     height: 100%;
     width: 100%;
     max-width: 1600px;
@@ -477,26 +523,321 @@ nav a{
     text-align: left;
     width: 100%;
 }
-.ad h1{
-    font-size: 51px;
-    color: #2C3E53;
-    line-height: 40px;
-    padding-bottom: 43px;
-    padding-top: 18px;
-    margin-left: 85px;
+/*try*/
+.ad .container{
+    position: relative;
+    margin-left: 80px;
+    width: 600px;
+    height: 600px;
+    border: 2px solid #fff;
+    border-radius: 50%;
 }
+.ad .container .icon{
+    position: relative;
+    left: -90%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.ad .container .icon .imgBx{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 47% 53% 70% 30% / 30% 43% 57% 70%;
+    overflow: hidden;
+    transition: 1.5s;
+    box-shadow: inset 40px 40px 40px rgba(0,0,0,0.2),
+    25px 35px 20px rgba(0,0,0,0.05),
+    25px 30px 30px rgba(0,0,0,0.05),
+    inset -20px -20px 25px rgba(255,255,255,0.7);
+    transform: rotate(calc(360deg/10 * var(--i)));
+    transform-origin: 340px;
+    z-index: 100;
+    overflow: hidden;
+}
+.ad .container .icon .imgBx.active{
+    border-radius: 50%;
+}
+.ad .container .icon .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: rotate(calc(-360deg/10 * var(--i)));
+    transition: 0.5;
+    filter: grayscale(1);
+}
+.ad .container .icon .imgBx.active img{
+    filter: grayscale(0);
+}
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.content{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.content::before{
+    content: '';
+    position: absolute;
+    inset: 60px;
+    border: 4px solid transparent;
+    border-left: 4px solid #000435;
+    border-right: 4px solid white;
+    border-radius: 50%;
+    animation: animate_01 5s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+@keyframes animate_01{
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+.content::after{
+    content: '';
+    position: absolute;
+    inset: 90px;
+    /* border: 4px solid white; */
+    box-shadow:  40px 40px 40px rgba(0,0,0,0.2),
+    25px 35px 20px rgba(0,0,0,0.05),
+    25px 30px 30px rgba(0,0,0,0.05),
+    inset -15px -15px 20px rgba(255,255,255,0.7);
+    /* border-left: 4px solid white; */
+    /* border-right: 4px solid white; */
+    border-radius: 48% 52% 63% 37% / 55% 58% 42% 45%;
+    /* animation: animate_02 2.5s linear infinite; */
+    z-index: 1;
+    pointer-events: none;
+}
+@keyframes animate_02{
+    0%{
+        transform: rotate(360deg);
+    }100%{
+        transform: rotate(0deg);
+    }
+}
+.contentBx{
+    position: absolute;
+    transform: scale(0);
+    transition: 0.5s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contentBx.active{
+    transform: scale(1);
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.contentBx .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 3rem;
+}
+.contentBx .card .imgBx{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    animation: float 4s ease-in-out infinite;
+    overflow: hidden;
+}
+.contentBx .card .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contentBx .card .textBx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 8rem; */
+    /* padding-right: 8rem; */
+    flex-direction: column;
+}
+.contentBx .card .textBx h2{
+    position: relative;
+    font-size: 2.5rem;
+    color: white;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.contentBx .card .textBx h2 span{
+    font-size: 0.65em;
+    color:  #000435;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+.contentBx .card .textBx p{
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+    color: white;
+    width: 60%;
+    text-align: center;
+}
+
+.img-card{
+    max-width: 150px;
+    max-height: 150px;
+    width: 100%;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: 0.7s ease-in;
+}
+.card-1{
+    background: transparent;
+    border-radius: 47% 53% 70% 30% / 30% 43% 57% 70%;
+}
+.card-2{
+    border-radius: 21% 79% 70% 30% / 21% 71% 29% 79%;
+}
+.card-3{
+    border-radius: 64% 36% 31% 69% / 60% 39% 61% 40%;
+}
+.card-4{
+    border-radius: 28% 72% 31% 69% / 60% 55% 45% 40%;
+}
+.card-5{
+    border-radius: 48% 52% 63% 37% / 55% 58% 42% 45%;
+}
+.card-6{
+    border-radius: 40% 60% 56% 44% / 46% 30% 70% 54%;
+}
+.card-7{
+    border-radius: 48% 52% 36% 64% / 55% 58% 42% 45%
+}
+.card-8{
+    border-radius: 62% 38% 72% 28% / 46% 30% 70% 54%;
+}
+.card-9{
+    border-radius: 26% 74% 72% 28% / 41% 44% 56% 59%;
+}
+.card-10{
+    border-radius: 28% 72% 31% 69% / 60% 55% 45% 40%;
+}
+.card:hover{
+    border-radius: 50%;
+}
+.hid{
+    color: #eee;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+    position: absolute;
+    max-width: 150px;
+    right: 35px;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.2s ease-in;
+}
+.card:hover .hid{
+    bottom:35%;
+    opacity: 1;
+}
+.card:hover h3{
+    opacity: 0;
+}
+.card:hover .color{
+    color: #000435;
+}
+.card:hover .bg{
+    opacity: 0.5;
+}
+.card:hover .img-card{
+    opacity: 0;
+}
+.color h3{
+    position: relative;
+    color: #f6f7f7;
+    padding-bottom: 30px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: 0.3s ease-in;
+}
+@media (max-width: 900px){
+    .ad .container .icon{
+        left: -60%;
+    }
+}
+@media (max-width: 750px){
+    .contentBx .card .imgBx{
+        width: 120px;
+        height: 80px;
+    }
+    .ad .container .icon .imgBx{
+        width: 50px;
+        height: 50px;
+        transform-origin: 44vw;
+    }
+    .ad .container{
+        width: 80vw;
+        height: 80vw;
+        margin-left: auto;
+    }
+    .contentBx .card .textBx h2{
+        font-size: 1.5rem;
+    }
+    .content::before{
+        display: none;
+    }
+    .content::after{
+        inset: 40px;
+    }
+    .contentBx .card .textBx p{
+        font-size: 1.5rem;
+        line-height: 1.2rem;
+    }
+}
+/*end*/
 .ad ul{
     font-size: 18px;
     margin-left: 85px;
     color: #2C3E53;
 }
 .ad p{
-    line-height: 35px;
-    font-size: 28px;
-    font-family: 'Times New Roman', Times, serif;
-    padding-bottom: 50px;
-    margin-left: 85px;
-    justify-content: space-between;
+    text-align: center;
     color:#2C3E53
 }
 .ad .quotes{
@@ -534,11 +875,15 @@ nav a{
 }
 @media (max-width: 1080px){
     .why-us{
-        padding-left: 2%;
-        padding-right: 2%;
+        padding: 2%;
+        display: block;
+    }
+    .why-us h1{
+        padding-top: 1.4rem;
     }
     .ad{
         display: block;
+        margin-top: 0;
         margin-left: 2%;
         margin-right: 2%;
     }
@@ -595,7 +940,7 @@ nav a{
     padding-left: 65px;
 }
 .wrapper{
-    /* designing container for cards layerout */
+    /* designing ad .container for cards layerout */
     /* background: linear-gradient(90deg, #880fc4 0%, #1d39f2 100%); */
     min-height: auto;
     margin-bottom: 0px;
