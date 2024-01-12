@@ -706,6 +706,8 @@ nav a{
     position: relative;
     display: flex;
     margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: white;
     width: 60%;
     text-align: center;
