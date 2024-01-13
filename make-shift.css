@@ -1530,7 +1530,7 @@ nav a{
 }
 /* ---------------VISIT Us----------------------- */
 .light-grey{
-    background-color: #92A4A8;
+    background-color: #9ea3ad;
     position: relative;
 }
 .custom-shape-divider-bottom-1702672989 {
@@ -1551,7 +1551,7 @@ nav a{
 }
 
 .custom-shape-divider-bottom-1702672989 .shape-fill {
-    fill: #92A4A8;
+    fill: #9ea3ad;
 }
 .cta{
     /* margin: 50px 0; */
@@ -1588,19 +1588,23 @@ nav a{
     /* background-attachment: fixed; */
 }
 .bg1{
-    min-width: 20%;
-    background-image: url(images/praxis.jpg);
+    min-width: 80%;
+    max-width: 100%;
+    background-image: url(images/clinic\ 1.jpeg);
     background-position: center;
+    background-size: contain;
 }
 .bg2{
     border-top-right-radius: 15px;
     min-width: 20%;
+    max-width: 100%;
     background-image: url(images/wr.jpg);
     background-position: center;
 }
 .bg4{
     border-bottom-left-radius: 15px;
     min-width: 20%;
+    max-width: 100%;
     background-image: url(images/makh.jpg);
     background-position: center;
 }
@@ -1624,7 +1628,7 @@ nav a{
 }
 .visit-us h1{
     font-size: 63px;
-    color: #00008b;
+    color: #000043;
     font-weight: 700;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 22px;
@@ -1634,7 +1638,7 @@ nav a{
 }
 .visit-us p{
     font-size: 22px;
-    color: #333;
+    color: #24262b;
     font-weight: 500;
     line-height: 30px;
     padding-top: 23px;
@@ -1647,11 +1651,11 @@ nav a{
     padding-right: 5px;
     padding-top: 0px;
     font-size: 26px;
-    color: #00008b;
+    color: #000043;
     line-height: 22px;
 }
 .visit-us a, .strong{
-    color: #00008b;
+    color: #000043;
     font-size: 20px;
     padding-left: 20px;
     padding-top: 1px;
@@ -1723,7 +1727,7 @@ iframe{
 }
 
 .custom-shape-divider-top-1702675678 .shape-fill {
-    fill: #92A4A8;
+    fill: #9ea3ad;
 }
 ul{
     list-style: none;

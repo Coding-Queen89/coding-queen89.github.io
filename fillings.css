@@ -408,14 +408,18 @@ input{
 }
 .exp{
     float: right;
-    width: 220px;
-    height: 339px;
     margin: 20px;
     shape-margin: 20px;
-    shape-outside: url(images/blab.png);
+    object-fit: contain;
+}
+.left{
+    float: left;
+    margin: 25px;
+    shape-margin: 20px;
+    object-fit: contain;
 }
 .vid{
-    float: left;
+    float: top;
     border-radius: 100px 100px 0 0;
     width: 450px;
     height: 230px;
@@ -425,6 +429,12 @@ input{
 }
 .intro{
     width: 95%;
+}
+.centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .twentytwenty-container{
     float:right;
