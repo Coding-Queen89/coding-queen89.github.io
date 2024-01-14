@@ -537,6 +537,11 @@ section {
     cursor: pointer;
     transition: 0.3s ease;
 }
+.font{
+    color: #f6f7f7;
+    font-weight: 600;
+    text-decoration: none;
+}
 
 .LearnMore::after {
     margin-left: 1rem;
@@ -801,7 +806,7 @@ section {
 
 .bg1 {
     min-width: 20%;
-    background-image: url(images/praxis.jpg);
+    background-image: url(images/clinic\ 1.jpeg);
     background-position: center;
 }
 

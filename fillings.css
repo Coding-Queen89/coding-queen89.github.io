@@ -318,6 +318,7 @@ ul{
 }
 .dental-lists{
     list-style-image: url(images/bullet\ \(2\).png);
+    width: 90%;
     padding-left: 50px;
     padding-top: 40px;
     padding-bottom: 70px;
@@ -345,9 +346,10 @@ main{
     border-radius: 10px;
     top: 40px;
     background-image: url(images/prem1.jpg);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    background-position: center top;
+    background-size: cover;
+    backdrop-filter: blur(29px);
+    -webkit-backdrop-filter: blur(29px);
+    background-position: center ;
 }
 .offer h2{
     color: #f6f7f7;
@@ -386,6 +388,10 @@ input{
     background-image: url(images/baradwhite.png);
     background-position: center;
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-repeat: space;
 }
 .title{
@@ -419,7 +425,7 @@ input{
     object-fit: contain;
 }
 .vid{
-    float: top;
+    float: left;
     border-radius: 100px 100px 0 0;
     width: 450px;
     height: 230px;
@@ -439,14 +445,17 @@ input{
 .twentytwenty-container{
     float:right;
     margin: 20px;
-    width: 35%;
+    width: 40%;
     shape-outside: url(images/WhatsApp\ Image\ 2023-12-28\ at\ 4.06.46\ PM\ \(2\).jpeg);
     shape-margin: 20px;
     border-radius: 10px;
 }
-#vertical{
+.fillings{
     margin-top: 100px;
     width: 25%;
+}
+.veneerCrown{
+    margin-top: 50px;
 }
 .links{
     content: '';
@@ -454,6 +463,9 @@ input{
     border-bottom: 3px solid #00008b;
     cursor: pointer;
     transition: 0.5s;
+    padding: 0px 3px 1px 3px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 .links:hover{
     background-color: rgb(0 0 139 / 0.5);
@@ -461,9 +473,6 @@ input{
 
 .label{
     position: relative;
-}
-.amalgam{
-
 }
 
 .cntr{
