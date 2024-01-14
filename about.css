@@ -1165,148 +1165,6 @@ header .container {
     fill: #F6F7F7;
 }
 /* ----------NURSESSSS SECTIONNN-------------- */
-{
-.nurses-section{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-self: center;
-    background: #ccc;
-}
-.n{
-    padding: 5rem 0 5rem;
-}
-.nurses{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 500px;
-    max-width: 1000px;
-}
-.blog-card{
-    position: absolute;
-    height: 400px;
-    width: 100%;
-    max-width: 850px;
-    margin: auto;
-    border-radius: 25px;
-    background: rgb(44 62 83 / 0.37);
-    box-shadow: 0 10px 50px rgba(53, 68, 198, 0.3);
-}
-.inner-part{
-    position: absolute;
-    display: flex;
-    height: 360px;
-    align-items: center;
-    justify-content: center;
-    padding: 0 25px;
-}
-.inner-part .img{
-    height: 260px;
-    width: 260px;
-    flex-shrink: 0;
-    overflow: hidden;
-    border-radius: 20px;
-}
-.img img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    opacity: 0;
-    transition: 0.6s;
-}
-#tap-1:checked ~ .inner-part .img-1,
-#tap-2:checked ~ .inner-part .img-2,
-#tap-3:checked ~ .inner-part .img-3{
-    opacity: 1;
-    transition-delay: 0.2s;
-}
-.inner-part .content{
-    padding: 0 20px 0 35px;
-    width: 530px;
-    margin-left: 50px;
-    opacity: 0;
-    transition: 0.6s;
-}
-#tap-1:checked ~ .inner-part .content-1,
-#tap-2:checked ~ .inner-part .content-2,
-#tap-3:checked ~ .inner-part .content-3{
-    opacity: 1;
-    margin-left: 0;
-    z-index: 100;
-    transition-delay: 0.3s;
-}
-.sliders{
-    position: absolute;
-    bottom: 25px;
-    left: 65%;
-    transform: translateX(-50%);
-    z-index: 120000;
-}
-.sliders .tap{
-    position: relative;
-    height: 10px;
-    width: 50px;
-    background-color: #24262b;
-    border-radius: 5px;
-    display: inline-flex;
-    margin: 0 3px;
-    cursor: pointer;
-}
-.sliders .tap:hover{
-    background: #ccc;
-}
-.sliders .tap::before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: -100%;
-    background: linear-gradient(147deg, white, grey, black);
-    border-radius: 10px;
-    transform: scaleX(0);
-    transition: transform 0.6s;
-    transform-origin: left;
-}
-input{
-    display: none;
-}
-#tap-1:checked~ .sliders .tap-1::before,
-#tap-2:checked~ .sliders .tap-2::before,
-#tap-3:checked~ .sliders .tap-3::before{
-    transform: scaleX(1);
-    width: 100%;
-}
-
-
-/* responsive */
-@media screen and (max-width: 50rem){
-    .inner-part{
-        flex-direction: column;
-    }
-    .blog-card{
-        height: 560px;
-        width: 100%;
-    }
-    .content{
-        margin-left: 0;
-        width: auto;
-        margin-top: 1rem;
-    }
-    .text{
-        text-align:  left !important;
-    }
-    #imgTap:checked ~ .inner-part .img{
-        height: 560px;
-        width: 100%;
-        top: 95px;
-        position: relative;
-    }
-}
-}
 .dentists{
     margin: auto;
     max-width: 1600px;
@@ -1314,6 +1172,7 @@ input{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 100px;
 }
 .dentists span{
     color: #00008b;
@@ -1486,9 +1345,30 @@ input{
     }
 }
 .light-grey {
+    background-color: #9ea3ad;
     position: relative;
 }
+.custom-shape-divider-bottom-1702672989 {
+    position: absolute;
+    top: -268px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+}
 
+.custom-shape-divider-bottom-1702672989 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 271px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1702672989 .shape-fill {
+    fill: #9ea3ad;
+}
 .cta {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -1528,7 +1408,7 @@ input{
 
 .bg1 {
     min-width: 20%;
-    background-image: url(images/praxis.jpg);
+    background-image: url(images/clinic\ 1.jpeg);
     background-position: center;
 }
 
@@ -1687,7 +1567,7 @@ iframe {
 }
 
 .custom-shape-divider-top-1702675678 .shape-fill {
-    fill: #f6f7f7;
+    fill: #9ea3ad;
 }
 
 .footer {
