@@ -25,6 +25,7 @@ body {
     background: url(images/pxfuel.jpg);
     background-attachment: fixed;
     background-position: top right;
+    background-size: cover;
     color: #2C3E53;
     max-width: 100vw;
     overflow-x: hidden;
