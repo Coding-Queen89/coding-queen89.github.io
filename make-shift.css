@@ -109,12 +109,6 @@ p,
     font-size: 1.5rem;
     text-transform: none;
 }
-.navlist .thera{
-    padding: 0 1rem;
-}
-.navlist .fa{
-    font-size: 14px;
-}
 .navlist a:hover{
     color: #92A4A8;
 }
@@ -207,7 +201,7 @@ li.move-right{
     transition: 1s;
 }
 .button:hover{
-    color: #ffd700;
+    color: #92A4A8;
     background-color: black;
 }
 .hea{
@@ -268,12 +262,6 @@ header .container {
         color: #f6f7f7;
     }
 }
-/* .container h2 {
-    color: white;
-    text-transform: uppercase;
-    font-size: 32px;
-    font-weight: 900;
-} */
 .container h2 span{
     color: #ffd700;
 }
@@ -373,7 +361,7 @@ nav a{
     color: white;
     font-size: 55px;
     margin-bottom: 32px;
-    margin-top: 155px;
+    margin-top: 125px;
 }
 .container h1 span{
     color: #F6F7F7;
@@ -448,6 +436,26 @@ nav a{
     .mobile-nav, .hamburger{
         display: none;
     }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #f6f7f7;
+}
+
+.star {
+    width: 1.4rem;
+    object-fit: cover;
+    margin-right: 4px;
+}
+.star-s1{
+    width: 10rem;
+}
+.star-s4 {
+    width: 3rem;
 }
 .tit{
     display: inline-block;

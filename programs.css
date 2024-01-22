@@ -455,7 +455,7 @@ header .container {
 }
 /* -----------------banner------------- */
 .banner{
-    background-image: url(images/Screenshot_2024-01-21_231749-removebg-preview.png);
+    background-image: url(images/fam.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -508,11 +508,12 @@ header .container {
     flex-direction: column;
     align-items: center;
     padding-top: 80px;
+    width: 100%;
     flex-wrap: wrap;
 }
 .program:nth-child(1){
     background-image: url(images/girl.png);
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -559,6 +560,7 @@ header .container {
 }
 .explanation{
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: flex-start;
 }
@@ -594,12 +596,26 @@ header .container {
     }
     .barad-smile p{
         width: 90%;
+        padding: 0;
+    }
+    .barad-smile h1{
+        flex-direction: column;
+        align-items: flex-end;
     }
     .barad-smile{
         flex-direction: column;
     }
     .explanation{
         flex-direction: column;
+    }
+    .out, .req, .out h3, .req h3{
+        padding-left: 0rem;
+    }
+    .out h3, .req h3{
+        padding-right: 1rem;
+    }
+    .dental-lists li{
+        padding: 0 1rem 0 0;
     }
 }
 
