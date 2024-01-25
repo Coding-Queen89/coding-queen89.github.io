@@ -423,3 +423,24 @@ header .container {
     object-fit: cover;
     margin-right: 4px;
 }
+.dental-lists {
+    list-style-image: url(images/bullet\ \(2\).png);
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    font-size: 2rem;
+    line-height: 2.8rem;
+}
+.links{
+    content: '';
+    border-bottom: #00008b;
+    border-bottom: 3px solid #00008b;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 0px 3px 1px 3px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.links:hover{
+    background-color: rgb(0 0 139 / 0.5);
+}
