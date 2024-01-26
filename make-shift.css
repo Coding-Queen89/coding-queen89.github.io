@@ -84,6 +84,19 @@ p,
 .dental-lists li{
     padding-top: 1rem;
 }
+.links{
+    content: '';
+    border-bottom: #00008b;
+    border-bottom: 3px solid #00008b;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 0px 3px 1px 3px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.links:hover{
+    background-color: rgb(0 0 139 / 0.5);
+}
 .navlist{
     display: flex;
     /* width: 100%; */
@@ -864,7 +877,6 @@ nav a{
 .text ul{
     list-style-type: none;
     font-size: 26px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 35px;
     margin-left: 85px;
     padding-bottom: 50px;
@@ -966,7 +978,6 @@ nav a{
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: darkblue;
 }
 .cardsRow{
@@ -1306,41 +1317,11 @@ nav a{
     font-size: 2rem;
     line-height: 0.3rem;
 }
-/* .services{
-    width: 90%;
-    height: 150vh;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-    padding: 50px;
-    max-width: 1600px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-.services p{
-    color: #00008bd6;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 30px;
-    padding: 10px;
-}*/
 .row{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
-/*.service-col{
-    flex-basis: 31%;
-    background: #ADD8E6;
-    opacity: 0.3;
-    width: auto;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 1s;
-    z-index: 95;
-} */
 .service-col:nth-child(1){
     transition-delay: 200ms;
 }
@@ -1361,21 +1342,6 @@ nav a{
     filter: blur(0);
     transform: translateX(0);
 }
-/* .service-col img{
-    border-radius: 10px;
-    width: 100%;
-}
-.service-col h3{
-    text-align: center;
-    color: #00008b;
-    font-size: 30px;
-    font-weight: 600;
-    margin: 10px 0;
-}
-.service-col:hover{
-    background-color: lightseagreen;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}*/
 
 .custom-shape-divider-top-1702670051 {
     position: absolute;
@@ -1423,9 +1389,11 @@ nav a{
 .par{
     background-image: url(images/WhatsApp\ Image\ 2024-01-15\ at\ 2.28.10\ PM.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: 60%;
     position: relative;
-    display: table;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     height: 130vh;
     width: 100%;
     background-attachment: fixed;
@@ -1463,66 +1431,44 @@ nav a{
         background-size: cover;
     }
 }
+.LearnMore {
+    border: none;
+    outline: none;
+    margin-top: 2rem;
+    color: #f6f7f7;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 5s ease-in-out;
+}
 .promo{
     position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 57.8%;
+    /* bottom: 0; */
+    /* right: 0; */
     margin-right: 5.5%;
-    border-top-right-radius: 25px;
-    border-color: 2px solid #ffd700;
-    border-bottom-left-radius: 25px;
-    align-items: center;
-    display: table-cell;
-    vertical-align: text-bottom;
-    justify-content: center;
-    background-color: lightsteelblue;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-}
-.promo h4{
-    padding-left: 42px;
-    padding-top: 17px;
-    padding-right: 7px;
-    font-size: 14px;
-    color: black;
-}
-.promo h1{
-    font-size: 63px;
-    padding-left: 27px;
-    padding-right: 35px;
-    padding-top: 20px;
-    padding-bottom: 36px;
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
-.promo ul li{
-    padding-left: 27px;
-    padding-right: 7px;
-    list-style: none;
-    font-size: 18px;
-    line-height: 30px;
-    padding-bottom: 15px;
-    color: black;
+    /* margin-top: 150px; */
+    margin-bottom: 100px;
+    width: 750px;
+    /* height: 500px; */
+    background-color: rgb(246 247 247 / 0.57);
+    border-radius: 70px;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    box-shadow: 0 0 60px #00008b;
+    z-index: 1;
 }
 .btn{
     display: inline-block;
-    color: black;
-    background-color: transparent;
-    border: 2px solid #00008b;
-    padding: 8px 6px;
-    margin-bottom: 25px;
-    margin-left: 27px;
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
     transition: 1s;
+    background: linear-gradient(to right, #000435, #253352, #2C3E53);
 }
 .btn:hover{
     color: #00008b;
-    font-style: italic;
-    font-weight: 700;
-    background-color: aliceblue;
+    background: linear-gradient(to right, #b2bec3, #9ea3ad, #2C3E53);
 }
 @media (max-width: 768px){
     .promo{
@@ -1548,6 +1494,7 @@ nav a{
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    z-index: 0;
 }
 
 .custom-shape-divider-bottom-1702672989 svg {
