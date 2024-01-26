@@ -675,16 +675,16 @@ nav a{
     position: relative;
     width: 150px;
     height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     animation: float 4s ease-in-out infinite;
     overflow: hidden;
 }
 .contentBx .card .imgBx img{
     position: absolute;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     object-fit: cover;
 }
@@ -841,8 +841,8 @@ nav a{
         inset: 40px;
     }
     .contentBx .card .textBx p{
-        font-size: 1.5rem;
-        line-height: 1.2rem;
+        font-size: 1rem;
+        line-height: 1rem;
     }
 }
 /*end*/
