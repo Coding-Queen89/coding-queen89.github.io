@@ -17,7 +17,7 @@
 html {
     font-size: 10px;
     scroll-behavior: smooth;
-    scroll-padding-top: 90px;
+    scroll-padding-top: 70px;
     background-color: #f6f7f7;
 }
 
@@ -110,8 +110,6 @@ ul {
 
 .plus {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 .addition {
@@ -130,7 +128,7 @@ ul {
 
 .navlist a {
     display: block;
-    color: #24262b;
+    color: #f6f7f7;
     padding: 1rem 1.5rem;
     font-size: 1.7rem;
     text-transform: uppercase;
@@ -361,6 +359,13 @@ header .container {
     .hamburger {
         display: block;
         z-index: 101;
+    }
+    .plus{
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .plus a{
+        width: 200px;
     }
 }
 
