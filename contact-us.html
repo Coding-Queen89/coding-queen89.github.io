@@ -7,6 +7,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Contact Us</title>
     <link rel="icon" href="images/aiLogo.png" type="image/png">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="contact-us.css">
 </head>
 
@@ -24,12 +25,14 @@
                 <li>
                     <div class="plus">
                         <a href="#">Services</a>
-                        <p class="addition">+</p>
+                        <p class="addition"><i class='bx bx-chevron-down' style='color:#f6f7f7'  ></i></p>
                     </div>
                     <ul class="submenu">
                         <li>
-                            <a href="therapeutical-services" class="dr">Therapeutic
-                            </a>
+                            <div class="plus">
+                                <a href="therapeutical-services" class="dr">Therapeutic</a>
+                                <p class="addition"><i class='bx bx-chevron-down' style='color:#f6f7f7'></i></p>
+                            </div>
                             <ul class="submenu">
                                 <li><a class="dr" href="fillings">Teeth Restoration</a></li>
                                 <li>
@@ -59,7 +62,10 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="preventive-treatments" class="dr">Preventive</a>
+                            <div class="plus">
+                                <a href="preventive-treatments" class="dr">Preventive</a>
+                                <p class="addition"><i class='bx bx-chevron-down' style='color:#f6f7f7'></i></p>
+                            </div>
                             <ul class="submenu">
                                 <li><a href="space-maintainers" class="dr">Space maintainers</a></li>
                                 <li><a href="#" class="dr" style="background-color: grey; color: beige;">Fluoride application</a></li>
@@ -68,8 +74,10 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="aesthetics" class="dr">Aesthetics
-                            </a>
+                            <div class="plus">
+                                <a href="aesthetics" class="dr">Aesthetic</a>
+                                <p class="addition"><i class='bx bx-chevron-down' style='color:#f6f7f7'></i></p>
+                            </div>
                             <ul class="submenu">
                                 <li><a href="#" class="dr" style="background-color: grey; color: beige;">Hollywood Smile</a></li>
                                 <li><a href="veneers" class="dr">Veneers</a></li>
@@ -83,7 +91,10 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Activities</a>
+                    <div class="plus">
+                        <a href="">Activities</a>
+                        <p class="addition"><i class='bx bx-chevron-down' style='color:#f6f7f7'></i></p>
+                    </div>
                     <ul class="submenu">
                         <li><a href="elite-patients" class="dr">Elite Patients</a></li>
                         <li><a href="#" class="dr" style="background-color: grey; color: beige;">Dental History</a></li>
@@ -132,22 +143,37 @@
     <section class="contact">
         <div class="blur">
             <img src="images/face-removebg-preview.png" alt="">
-            <div class="contact-us">
+            <div class="contact-us details">
                 <h1>Contact Us</h1>
-                <h4> <i class='bx bx-location-plus'></i> King Fahd Br Rd, <br> Al Faisaliyyah, Jeddah 23442</h4>
                 <h4>
+                    <i class='bx bx-location-plus'></i>
                     <a href="https://maps.app.goo.gl/GF3MhYCt7jc9d8gH8" rel="noopener" target="_blank">
-                    <strong>Get Directions <br></strong></a>
+                    <strong>King Fahd Br Rd, <br> Al Faisaliyyah, Jeddah 23442</strong></a>
                 </h4>
-                <h4><i class='bx bxl-whatsapp'></i> +966 565393118</h4>
-                <h4><i class='bx bxl-instagram'></i> baraddental</h4>
-                <h4><i class='bx bxs-phone-call'></i> 05565393118</h4>
+                <div class="social-links">
+                    <a href="tel:+966 565393118"><i class='bx bxs-phone-call'></i></i></a> <p>0565393118</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://wa.me/966565393118" style="--i:7"><i class="bx bxl-whatsapp"></i></a> <p>+966 565393118</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://sa.linkedin.com/in/rotana-abulaban-00411323a"><i class="bx bxl-linkedin"></i></a> <p>LINKEDIN????</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/baraddental/"><i class="bx bxl-instagram"></i></a> <p>baraddental</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.tiktok.com/@barad.dental"><i class="bx bxl-tiktok"></i></a> <p>@barad.dental</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/baraddental/"><i class="bx bxl-facebook"></i></a> <p>baraddental</p>
+                </div>
             </div>
         </div>
         <div class="contact-info">
             <div class="wrapper">
-                <h2>Your Word Matters!</h2>
-                <h3>And we want to hear it!</h3>
+                <h2>Don't hesitate!</h2>
+                <h3>You will leave with an unequivocal smile!</h3>
                 <form action="https://formspree.io/f/xdoqorev" method="post">
                     <input type="text" name="name" placeholder="Name" required>
                     <input type="text" name="Subject" placeholder="What is it?" required>
@@ -158,6 +184,8 @@
             </div>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script src="join-us.js"></script>
 </body>
 
