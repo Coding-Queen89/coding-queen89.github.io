@@ -615,6 +615,11 @@
         transform: rotateX(-180deg);
     }
 }
+@media(max-width: 300px){
+    .card{
+        width: 250px;
+    }
+}
 
 .kabeer {
     display: flex;
@@ -712,13 +717,14 @@
     }
     .r2{
         width: 100%;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
     .quote{
         display: grid;
         grid-column-end: span 1;
+        margin-bottom: 50px;
     }
-    .coffee{width: 50%;}
+    .coffee{display: none;}
 }
 .custom-shape-divider-bottom-1704847927 {
     position: absolute;
@@ -898,6 +904,8 @@
 @media (max-width: 900px){
     .dentists{
         padding: 2rem;
+        margin: 0;
+        margin-bottom: 120px;
     }
     .dental-grid{
         display: flex;
@@ -1078,7 +1086,7 @@ iframe {
 
     .cta .row {
         display: block;
-        margin-left: 5%;
+        /* margin-left: 5%; */
         padding-left: 0px;
     }
 
