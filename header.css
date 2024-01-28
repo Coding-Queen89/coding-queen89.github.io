@@ -141,7 +141,9 @@ ul {
     font-size: 1.5rem;
     text-transform: none;
 }
-
+.navlist .dr:hover{
+    /* background-color: #2C3E53; */
+}
 .navlist a:hover {
     color: #00008b;
 }

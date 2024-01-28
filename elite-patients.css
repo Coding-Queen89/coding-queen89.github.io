@@ -2,6 +2,9 @@ body{
     background-color: #9EA3AD;
     overflow-x: hidden;
 }
+.navlist a{
+    color: #000043;
+}
 .frost{
     display: flex;
     position: absolute;
