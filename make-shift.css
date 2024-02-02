@@ -729,7 +729,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 900px;
+    height: 700px;
     background-color: #253352;
     z-index: 90;
     width: 100%;
@@ -738,7 +738,7 @@
     display: flex;
     position: absolute;
     width: 100%;
-    height: 950px;
+    height: 750px;
     z-index: 2;
 }
 /* .snow2{
@@ -751,9 +751,9 @@
 .services{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center ;
-    height: 835px;
+    height: 635px;
     min-height: -moz-fit-content;
     min-height: fit-content;
     /* background:rgba(9, 9, 79, 0.2); */
@@ -807,7 +807,6 @@
 .waterContainer .drop:nth-child(1){
     /*fancy border radius*/
     border-radius: 47% 53% 70% 30% / 30% 43% 57% 70%;
-    transition: 8s;
 }
 .waterContainer .drop:nth-child(2){
     border-radius: 69% 31% 28% 72% / 43% 63% 37% 57%;
@@ -938,6 +937,9 @@
     transform: translateX(-100%);
     transition: all 1s;
 }
+.button{
+    border-radius: 5px;
+}
 .show{
     opacity: 1;
     filter: blur(0);
@@ -964,7 +966,8 @@
     fill: #253352;
 }
 @media(max-width: 1180px){
-    .services,.grey{
+    .services, .grey{
+        justify-content: center;
         height: 1500px
     }
     .waterContainer{
@@ -995,7 +998,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    height: 130vh;
+    height: 850px;
     width: 100%;
     background-attachment: fixed;
 }
@@ -1049,7 +1052,7 @@
     /* right: 0; */
     margin-right: 5.5%;
     /* margin-top: 150px; */
-    margin-bottom: 100px;
+    margin-bottom: 130px;
     width: 750px;
     /* height: 500px; */
     background-color: rgb(246 247 247 / 0.57);
@@ -1060,6 +1063,9 @@
     padding-right: 4rem;
     box-shadow: 0 0 60px #00008b;
     z-index: 1;
+}
+.promo .dental-lists{
+    padding-bottom: 0;
 }
 .btn{
     display: inline-block;
@@ -1072,6 +1078,9 @@
     background: linear-gradient(to right, #b2bec3, #9ea3ad, #2C3E53);
 }
 @media (max-width: 768px){
+    .par{
+        height: 130vh;
+    }
     .promo{
         margin-left: 15px;
         width: 80%;
