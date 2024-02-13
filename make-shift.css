@@ -163,6 +163,12 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    /*Allowing blue box in small screens upon tapping to disappear*/
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .ad .container .icon .imgBx{
     position: absolute;
