@@ -113,7 +113,7 @@
 }
 
 .custom-shape-divider-bottom-1702503253 .shape-fill {
-    fill: #92A4A8;
+    fill: #b9bcdb;
 }
 .why-us{
     display: flex;
@@ -121,7 +121,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: #92A4A8;
+    background-color: #b9bcdb;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -223,7 +223,7 @@
     position: absolute;
     inset: 60px;
     border: 4px solid transparent;
-    border-left: 4px solid #000435;
+    border-left: 4px solid #000043;
     border-right: 4px solid white;
     border-radius: 50%;
     animation: animate_01 5s linear infinite;
@@ -312,14 +312,14 @@
 .contentBx .card .textBx h2{
     position: relative;
     font-size: 2.5rem;
-    color: white;
+    color: #000043;
     line-height: 1em;
     text-transform: uppercase;
     text-align: center;
 }
 .contentBx .card .textBx h2 span{
     font-size: 0.65em;
-    color:  #000435;
+    color:  #253352;
     font-weight: 500;
     letter-spacing: 0.1em;
 }
@@ -329,7 +329,7 @@
     margin-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    color: white;
+    color: black;
     width: 60%;
     text-align: center;
 }
@@ -554,7 +554,7 @@
 }
 
 .custom-shape-divider-top-1702504460 .shape-fill {
-    fill: #92A4A8;
+    fill: #b9bcdb;
 }
 /* -----------testimonials---------- */
 .testimonials{
@@ -602,6 +602,7 @@
     font-weight: 300;
     margin-bottom: 80px;
     margin-left: 45px;
+    color: #253352;
 }
 .cards{
     display: flex;
@@ -636,8 +637,8 @@
     transition: 0.5s;
 }
 .card1{ background: rgba(0,0,255,0.2);}
-.card2{ background: rgba(0,255,0,0.2);}
-.card3{ background: rgba(0, 204, 255, 0.2);}
+.card2{ background: rgba(0, 0, 139,0.2);}
+.card3{ background: rgba(37, 51, 82, 0.2);}
 
 .card1 img, .card2 img, .card3 img{
     height: 90px;
