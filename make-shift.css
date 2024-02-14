@@ -232,14 +232,24 @@
     border-left: 4px solid #000043;
     border-right: 4px solid white;
     border-radius: 50%;
-    animation: animate_01 5s linear infinite;
+    transition: transform 0.5s ease; /* Added transition */
     z-index: 1;
     pointer-events: none;
 }
-@keyframes animate_01{
-    0%{
+
+.content:hover::before {
+    transform: rotate(40deg); /* Stop the rotation on hover */
+}
+
+.content:not(:hover)::before {
+    animation: animate_01 5s linear infinite; /* Start the animation again when not hovering */
+}
+
+@keyframes animate_01 {
+    0% {
         transform: rotate(0deg);
-    }100%{
+    }
+    100% {
         transform: rotate(360deg);
     }
 }
@@ -702,6 +712,7 @@
         width: 90%;
         margin-left: 10px;
         flex-direction: column;
+        padding-top: 0px;
     }
     .card1, .card2, .card3{
         width: 100%;
