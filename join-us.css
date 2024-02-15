@@ -1,6 +1,9 @@
 .navlist a{
     color: #000043;
 }
+.submenu{
+    background-color: #92A4A8;
+}
 html {
     background-color: #bbbcbb;
 }
@@ -8,7 +11,14 @@ html {
 .body {
     background-color: #bbbcbb;
 }
-
+@media(max-width: 900px){
+    .navlist a{
+        color: #f6f7f7;
+    }
+    .submenu{
+        background-color: transparent;
+    }
+}
 /* --------------BANNER------------ */
 .banner{
     display: flex;
