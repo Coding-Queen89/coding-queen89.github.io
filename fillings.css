@@ -1,9 +1,24 @@
 .navlist a{
     color: #000043;
 }
+.submenu{
+    background-color: #b2bec3;
+}
+.hamburger .bar, .hamburger::after, .hamburger::before{
+    background-color: #000043;
+}
+.is-scrolling{
+    .hamburger .bar, .hamburger::after, .hamburger::before{
+        background-color: #f6f7f7;
+    }
+}
+@media(max-width: 900px){
+    .navlist a{color: #f6f7f7;}
+    .submenu{background-color: transparent;}
+}
 main{
     display: flex;
-
+    justify-content: space-around;
     align-items: start;
     gap: 1rem;
     margin-top: 100px;
@@ -18,14 +33,16 @@ main{
     position: sticky;
     margin: 5px;
     min-width: 180px;
+    max-width: 180px;
     padding: 10px;
     border-radius: 10px;
     top: 40px;
-    background-image: url(images/prem1.jpg);
+    background-image: url(images/prem2.png);
     background-size: cover;
     backdrop-filter: blur(29px);
     -webkit-backdrop-filter: blur(29px);
     background-position: center ;
+    transition: 0.5s;
 }
 .offer h2{
     color: #f6f7f7;
@@ -55,12 +72,14 @@ input{
     margin-bottom: 10px;
     border-radius: 60px;
     padding: 3px;
+    padding-left: 10px;
 }
 .sub{
     padding: 5px 0px;
     width: 100%;
 }
 .content{
+    max-width: 1600px;
     background-image: url(images/baradwhite.png);
     background-position: center;
     margin-top: 40px;
@@ -71,19 +90,14 @@ input{
     background-repeat: space;
 }
 .title{
-    height: 20px;
+    height: fit-content;
     position: relative;
-}
-.title::after{
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    height: 20px;
     width: 100%;
-    border: solid 2px #000435;
-    border-color: #000435 transparent transparent transparent;
-    border-radius: 36% / 42% ;
+}
+.title img{
+    width: 100%;
+    object-fit: contain;
+    filter: hue-rotate(10deg);
 }
 .mat{
     text-indent: 1.5vw;
@@ -111,6 +125,15 @@ input{
 }
 .intro{
     width: 95%;
+}
+.intro h2{
+    text-align: center;
+    color: #000043;
+    /* padding-top: 40px; */
+    padding-bottom: 0px;
+}
+.intro h3{
+    color: #3a5ba2;
 }
 .centre{
     display: flex;
@@ -178,7 +201,7 @@ input{
     fill: #f6f7f7;
 }
 .footer{
-    background-color: #000435;
+    background-color: #000043;
     /* opacity: 0.9; */
     margin-top: 150px;
     padding: 2px 0;
@@ -283,6 +306,7 @@ input{
     .exp{
         width: 50%;
         height: 40%;
+        margin-right: 0px;
     }
     .vid{
         width: 100%;
@@ -290,6 +314,10 @@ input{
     .twentytwenty-container,#vertical{width: 60%;}
     .offer{
         width: 100px;
+        left: 50%;
     }
     .sub{margin-left: 0;}
+    .left{
+        margin-left: 0px;
+    }
 }

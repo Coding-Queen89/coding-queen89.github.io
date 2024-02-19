@@ -847,7 +847,7 @@
 }
 .waterContainer .drop:nth-child(3):hover{
     border-radius: 50%;
-    background-image: url(images/surg.jpeg);
+    background-image: url(images/surg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -929,6 +929,7 @@
 }
 .waterContainer .drop .service-col p{
     color: white;
+    text-align: center;
 }
 .waterContainer .drop .service-col h2{
     color: white;
