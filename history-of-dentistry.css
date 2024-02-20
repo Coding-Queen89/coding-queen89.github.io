@@ -80,7 +80,7 @@ html{
         opacity: 1;
     }
 }
-main{
+.main_history_content{
     display: flex;
     flex-direction: column;
     align-items: center;

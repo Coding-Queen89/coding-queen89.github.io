@@ -49,7 +49,7 @@ html{
     position: relative;
     height: 100vh;
 }
-.blur{
+.blurred_banner{
     background-image: url(images/reception.jpg);
     background-size: cover;
     background-position: center;
@@ -114,7 +114,7 @@ html{
 	color: #fff;
 }
 
-.blur img{
+.blurred_banner img{
     position: absolute;
     z-index: -1;
     right: calc(50vw - 30px);
@@ -138,12 +138,12 @@ html{
         flex-direction: column;
         height: 200vh;
     }
-    .blur{
+    .blurred_banner{
         width: 100vw;
         height: 100vh;
         align-content: center;
     }
-    .blur img{
+    .blurred_banner img{
         position: absolute;
         z-index: 94;
         height: 100vw;
