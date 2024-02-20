@@ -11,7 +11,9 @@ camera.position.z = 40;
 camera.position.y = camera_y
 let renderer= new THREE.WebGLRenderer({alpha: true,antialias: true});
 renderer.setClearColor(0xf0d98e,0);
-renderer.setSize(1000,500);
+if(window.innerWidth/1.7 < 1000){
+    renderer.setSize(window.innerWidth/1.7,window.innerHeight/1.7);
+}else renderer.setSize(1000,500);
 
 renderer.domElement.setAttribute('id',"Model");
 set_model_directory.appendChild(renderer.domElement, document.body.firstChild);
@@ -34,20 +36,11 @@ loader.load(model_local_directory, function(gltf) {
     obj = gltf;
     obj.scene.scale.set(13,13,13);
     let mm = gsap.matchMedia();
-    mm.add("(max-width: 601px)", () =>{
+    mm.add("(max-width: 801px)", () =>{
         renderer.setSize(window.outerWidth-120,500);
         obj.scene.scale.set(4,4,4);
     });
     scene.add(obj.scene);
-
-    obj2 = gltf;
-    obj2.scene.scale.set(15,15,15);
-    let mm2 = gsap.matchMedia();
-    mm2.add("(min-width: 602px) and (max-width: 1000px)", () =>{
-        renderer.setSize(window.outerWidth-500,800);
-        obj2.scene.scale.set(5,5,5);
-    })
-    scene.add(obj2.scene);
 }) ;
 
 

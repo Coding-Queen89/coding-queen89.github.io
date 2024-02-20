@@ -312,6 +312,9 @@ input{
         height: 40%;
         margin-right: 0px;
     }
+    p{
+        text-justify: distribute;
+    }
     .vid{
         width: 100%;
     }
