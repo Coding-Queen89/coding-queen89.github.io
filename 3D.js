@@ -28,6 +28,7 @@ scene.add(pLight);
 
 let loader = new GLTFLoader();
 let obj = null;
+let obj2 = null;
 
 loader.load(model_local_directory, function(gltf) {
     obj = gltf;
@@ -38,6 +39,15 @@ loader.load(model_local_directory, function(gltf) {
         obj.scene.scale.set(4,4,4);
     });
     scene.add(obj.scene);
+
+    obj2 = gltf;
+    obj2.scene.scale.set(15,15,15);
+    let mm2 = gsap.matchMedia();
+    mm2.add("(min-width: 602px) and (max-width: 1000px)", () =>{
+        renderer.setSize(window.outerWidth-500,800);
+        obj2.scene.scale.set(5,5,5);
+    })
+    scene.add(obj2.scene);
 }) ;
 
 

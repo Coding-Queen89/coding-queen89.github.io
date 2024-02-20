@@ -43,7 +43,7 @@ gsap.utils.toArray('.star').forEach(star => {
         opacity: 1,
         y: 0,
         duration: 1,
-        delay: 1.5,
+        delay: 1.2,
         scrollTrigger: star
     })
 })

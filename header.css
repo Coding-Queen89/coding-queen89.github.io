@@ -418,7 +418,7 @@ header .container {
         height: 150vh;
         z-index: 100;
         padding-top: 120px;
-        overflow-y: scroll;
+        overflow-y: auto;
         transition: 0.4s;
     }
 
