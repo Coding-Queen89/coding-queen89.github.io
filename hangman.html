@@ -5,12 +5,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangman</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="images/aiLogo.png" type="image/png">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="hangman.css">
     <script src="word-list.js" defer></script>
     <script src="hangman.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img class="star star-s4" src="images/aiLogo.png" alt="">
+                <div>Barad Dental Clinic</div>
+            </div>
+            <ul class="navlist">
+                <li>
+                    <a href="barad-dental">Home</a>
+                </li>
+                <li>
+                    <div class="plus">
+                        <a href="#">Services</a>
+                        <p class="addition"><i class='bx bx-chevron-down' style='color:#f6f7f7'  ></i></p>
+                    </div>
+                    <ul class="submenu">
+                        <li>
+                            <div class="plus">
+                                <a href="therapeutical-services" class="dr">Therapeutic</a>
+                                <p class="addition"><i class='bx bx-chevron-down' style='color:#f6f7f7'></i></p>
+                            </div>
+                            <ul class="submenu">
+                                <li><a href="fillings" class="dr">Teeth Fillings</a></li>
+                                <li><a href="root-canal-treatment" class="dr">Root Canal Treatment</a></li>
+                                <li><a href="#" class="dr" style="background-color: gray; color: beige;">Extraction</a></li>
+                                <li>
+                                    <div class="plus" style="background-color: gray; color: beige;">
+                                        <a href="#" class="dr"  style="color: white;">Gum Treatment</a>
+                                        <p class="addition"><i class='bx bx-chevron-down' style='color:#f6f7f7'></i></p>
+                                    </div>
+                                    <ul class="submenu">
+                                        <li><a href="" class="dr" style="background-color: gray; color: beige;">Gum Debridement</a></li>
+                                        <li><a href="" class="dr" style="background-color: gray; color: beige;">Gum Scaling</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="dr" style="background-color: gray; color: beige;">Crowns & Bridges</a></li>
+                                <li><a href="#" class="dr" style="background-color: gray; color: beige;">Implants</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="plus">
+                                <a href="preventive-treatments" class="dr">Preventive</a>
+                                <p class="addition"><i class='bx bx-chevron-down' style='color:#f6f7f7'></i></p>
+                            </div>
+                            <ul class="submenu">
+                                <li><a href="space-maintainers" class="dr">Space Maintainers</a></li>
+                                <li><a href="#" class="dr" style="background-color: gray; color: beige;">Fluoride Application</a></li>
+                                <li><a href="#" class="dr" style="background-color: gray; color: beige;">Pit and Fissure Sealant</a></li>
+                                <li><a href="#" class="dr" style="background-color: gray; color: beige;">Serial Extraction</a></li>
+                                <li><a href="#" class="dr" style="background-color: gray; color: beige;">Systematic Recalls</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="plus">
+                                <a href="aesthetics" class="dr">Esthetic</a>
+                                <p class="addition"><i class='bx bx-chevron-down' style='color:#f6f7f7'></i></p>
+                            </div>
+                            <ul class="submenu">
+                                <li>
+                                    <div class="plus" style="background-color: gray;">
+                                        <a href="#" class="dr" style="color: white;">Orthodontic Treatment</a>
+                                        <p class="addition"><i class='bx bx-chevron-down' style='color:#f6f7f7'></i></p>
+                                    </div>
+                                    <ul class="submenu">
+                                        <li><a href="" class="dr" style="background-color: gray; color: beige;">Braces</a></li>
+                                        <li><a href="invisalign" class="dr">Invisalign</a></li>
+                                        <li><a href="" class="dr" style="background-color: gray; color: beige;">Retainer</a></li>
+                                        <li><a href="" class="dr" style="background-color: gray; color: beige;">Night Guard</a></li>
+                                        <li><a href="" class="dr" style="background-color: gray; color: beige;">Removable Applicances</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="dr" style="background-color: gray; color: beige;">Hollywood Smile</a></li>
+                                <li><a href="veneers" class="dr">Veneers</a></li>
+                                <li><a href="zoom-bleaching" class="dr">Zoom Bleaching</a></li>
+                                <li><a href="#" class="dr" style="background-color: gray; color: beige;">Polishing</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="programs" class="dr">Barad Dental</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="plus">
+                        <a href="">Activities</a>
+                        <p class="addition"><i class='bx bx-chevron-down' style='color:#f6f7f7'></i></p>
+                    </div>
+                    <ul class="submenu">
+                        <li><a href="elite-patients" class="dr">Elite Patients</a></li>
+                        <li><a href="history-of-dentistry" class="dr">Dental History</a></li>
+                        <li><a href="memes" class="dr">Facts & Memes</a></li>
+                        <li>
+                            <div class="plus" style="background-color: gray;">
+                                <a href="#" class="dr" style="color: white;">Tournaments</a>
+                                <p class="addition"><i class='bx bx-chevron-down' style='color:#f6f7f7'></i></p>
+                            </div>
+                            <ul class="submenu">
+                                <li><a href="#" class="dr" style="background-color: gray; color: beige;">Challenge
+                                        Zone</a></li>
+                                <li><a href="Quiz" class="dr">Hard Level</a>
+                                </li>
+                                <li><a href="#" class="dr" style="background-color: gray; color: beige;">Medium
+                                        Level</a></li>
+                                <li><a href="hangman" class="dr" target="_blank">Easy Level</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="dr" style="background-color: gray; color: beige;">Games & Quizes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="plus">
+                        <a href="About">About Us</a>
+                        <p class="addition"><i class='bx bx-chevron-down' style='color:#f6f7f7'></i></p>
+                    </div>
+                    <ul class="submenu">
+                        <li><a href="FAQ" class="dr">FAQ's</a></li>
+                        <li><a href="mission-and-vision" class="dr">Mission & Vision</a></li>
+                        <li><a href="join-us" class="dr">Join Us</a></li>
+                        <li>
+                            <div class="plus">
+                                <a href="About#our-team" class="dr">Our Team</a>
+                                <p class="addition"><i class='bx bx-chevron-down' style='color:#f6f7f7'></i></p>
+                            </div>
+                            <ul class="submenu">
+                                <li><a href="About#ayham" class="dr">Dr. Ayham Ammoura</a></li>
+                                <li><a href="About#waad" class="dr">Dr. Waad Al-Matrafi</a></li>
+                                <li><a href="About#shmookh" class="dr">Dr. Shmookh</a></li>
+                                <li><a href="About#karam" class="dr">Dr. Karam Zakzook</a></li>
+                                <li><a href="About#yasmin" class="dr">Dr. Yamsin</a></li>
+                                <li><a href="About#ibrahim" class="dr">Dr. Ibrahim Al-Shahri</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="Gallery">Gallery</a></li>
+                <li class="move-right bxn">
+                    <a href="contact-us">Contact Us</a>
+                </li>
+            </ul>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+        </div>
+    </header>
     <div class="teeth" id="teeth"></div>
     <div class="game-modal">
         <div class="content">
@@ -20,7 +166,7 @@
             <button class="play-again">Play Again</button>
         </div>
     </div>
-    <div class="container">
+    <div class="hangman_container">
         <div class="hangman-box">
             <img src="images/hangman/hangman-0.svg" alt="hangman-img">
             <h1>Hangman Game</h1>
@@ -29,9 +175,7 @@
             <ul class="word-display"></ul>
             <h4 class="hint-text">
                 Hint:
-                <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil minus vero distinctio praesentium
-                    voluptatum, at quas non commodi magni aliquid doloribus, quam, necessitatibus vel vitae assumenda
-                    reiciendis amet saepe fuga.</b>
+                <b>Sorry! Hint Not Found. Something went Wrong!</b>
             </h4>
             <h4 class="guesses-text">
                 Incorrect Guesses:
@@ -42,6 +186,58 @@
     </div>
     <script src="particles.min.js"></script>
     <script src="teeth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script>
+        var lastScrollTop = 0;
+        window.onload = function () {
+            var navbar = document.querySelector("header");
+            window.addEventListener('scroll', function (e) {
+                if (window.pageYOffset > 10) {
+                    navbar.classList.add('is-scrolling');
+                } else {
+                    navbar.classList.remove('is-scrolling');
+                }
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop) {
+                    navbar.style.top = "-140px";
+                } else {
+                    navbar.style.top = "0";
+                }
+                lastScrollTop = scrollTop;
+            });
+
+            const menu_btn = document.querySelector('.hamburger');
+            const mobile_menu = document.querySelector('.navlist');
+
+            menu_btn.addEventListener('click', function () {
+                menu_btn.classList.toggle('is-active');
+                mobile_menu.classList.toggle('is-active');
+            });
+        }
+        gsap.from('.logo div', {
+            opacity: 0,
+            delay: 1,
+            x: 20
+        })
+
+
+        gsap.utils.toArray('.star').forEach(star => {
+            gsap.fromTo(star, {
+                rotation: 450,
+                opacity: 0,
+                y: 100
+            }, {
+                rotation: 0,
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                delay: 1.2,
+                scrollTrigger: star
+            })
+        })
+
+    </script>
 </body>
 
 </html>
