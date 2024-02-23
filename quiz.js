@@ -91,7 +91,7 @@ function optionSelected(answer){
     let userans = answer.textContent;
     let correctans = questions[questionCount].answer;
     let allOptions = optionList.children.length;
-    console.log(correctans);
+    // console.log(correctans);
     if(userans == correctans){
         answer.classList.add('correct');
         score++;

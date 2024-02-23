@@ -1,6 +1,21 @@
 .navlist a{
     color: #000043;
 }
+.submenu{
+    background-color: #b2bec3;
+}
+.hamburger .bar, .hamburger::after, .hamburger::before{
+    background-color: #000043;
+}
+.is-scrolling{
+    .hamburger .bar, .hamburger::after, .hamburger::before{
+        background-color: #f6f7f7;
+    }
+}
+@media(max-width: 900px){
+    .navlist a{color: #f6f7f7;}
+    .submenu{background-color: transparent;}
+}
 /* -----------------banner------------- */
 .banner{
     background-image: url(images/fam.png);
