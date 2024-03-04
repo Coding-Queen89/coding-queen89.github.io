@@ -225,6 +225,7 @@ ul {
     padding: 0rem 1.5rem;
     font-size: 1.5rem;
     text-transform: none;
+    width: 100%;
 }
 
 .navlist a:hover {
@@ -474,7 +475,7 @@ header .container {
 @media (min-width: 901px) and (max-width: 1180px) {
     header .container {
         padding-left: 32px;
-        padding-right: 32px;
+        padding-right: 62px;
     }
 }
 
