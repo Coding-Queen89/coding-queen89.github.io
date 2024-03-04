@@ -12,9 +12,12 @@
         background-color: #f6f7f7;
     }
 }
+.submenu li:hover {
+    background-color: #c6d5dc;
+}
 @media(max-width: 900px){
     .navlist a{color: #f6f7f7;}
-    .submenu{background-color: transparent;}
+    .submenu, .submenu li:hover{background-color: transparent;}
 }
 .frost{
     display: flex;

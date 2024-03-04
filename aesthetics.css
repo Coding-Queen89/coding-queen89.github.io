@@ -23,9 +23,12 @@ body {
         background-color: #f6f7f7;
     }
 }
+.submenu li:hover {
+    background-color: #c6d5dc;
+}
 @media(max-width: 900px){
     .navlist a{color: #f6f7f7;}
-    .submenu{background-color: transparent;}
+    .submenu, .submenu li:hover{background-color: transparent;}
 }
 section {
     height: -moz-fit-content;
@@ -155,6 +158,8 @@ section {
     color: #f6f7f7;
     font-weight: 600;
     text-decoration: none;
+    width: 100%;
+    display: block;
 }
 
 .LearnMore::after {
@@ -214,7 +219,7 @@ section {
     border-radius: 50%;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 800px) {
     .triples {
         grid-template-columns: repeat(4, 1fr);
         width: 100%;
@@ -293,14 +298,13 @@ section {
     filter: drop-shadow(-20px 0px 1.75rem rgb(146, 7, 7));
 }
 
-@media(max-width:600px) {
+@media(max-width:800px) {
     section {
         padding: 0;
     }
 
     .gold,
     .tooth3 {
-        height: 100vw;
         width: 100%;
     }
 

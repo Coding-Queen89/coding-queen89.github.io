@@ -12,9 +12,12 @@
         background-color: #f6f7f7;
     }
 }
+.submenu li:hover {
+    background-color: #c6d5dc;
+}
 @media(max-width: 900px){
     .navlist a{color: #f6f7f7;}
-    .submenu{background-color: transparent;}
+    .submenu, .submenu li:hover{background-color: transparent;}
 }
 main{
     display: flex;
@@ -25,6 +28,7 @@ main{
     margin-left: 20px;
 }
 .contents{
+    /* background-image: url(images/particles-removebg-preview.png); */
     position: sticky;
     min-width: 250px;
     top: 160px;
@@ -37,7 +41,7 @@ main{
     padding: 10px;
     border-radius: 10px;
     top: 40px;
-    background-image: url(images/prem2.png);
+    background-image: url(images/premises-2.png);
     background-size: cover;
     backdrop-filter: blur(29px);
     -webkit-backdrop-filter: blur(29px);
@@ -72,22 +76,25 @@ input{
     margin-bottom: 10px;
     border-radius: 60px;
     padding: 3px;
+    border: none;
     padding-left: 10px;
 }
 .sub{
     padding: 5px 0px;
     width: 100%;
+    border: none;
 }
 .content{
     max-width: 1600px;
     background-image: url(images/baradwhite.png);
+    background-attachment: fixed;
     background-position: center;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-repeat: space;
+    background-repeat: no-repeat;
 }
 .title{
     height: fit-content;
