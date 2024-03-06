@@ -18,14 +18,20 @@ html {
 .hamburger .bar, .hamburger::after, .hamburger::before{
     background-color: #000043;
 }
+.submenu li:hover {
+    background-color: #c6d5dc;
+}
 .is-scrolling{
     .hamburger .bar, .hamburger::after, .hamburger::before{
         background-color: #f6f7f7;
     }
+    .submenu li:hover {
+        background-color: #394d65;
+    }
 }
 @media(max-width: 900px){
     .navlist a{color: #f6f7f7;}
-    .submenu{background-color: transparent;}
+    .submenu, .submenu li:hover{background-color: transparent;}
 }
 section {
     height: -moz-fit-content;
