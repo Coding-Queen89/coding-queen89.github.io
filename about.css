@@ -17,6 +17,9 @@
     .submenu li:hover {
         background-color: #394d65;
     }
+    @media(max-width: 900px){
+        .submenu, .submenu li:hover{background-color: transparent;}
+    }
 }
 @media(max-width: 900px){
     .navlist a{color: #f6f7f7;}

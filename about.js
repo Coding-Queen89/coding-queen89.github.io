@@ -48,3 +48,11 @@ var typed = new Typed(".text", {
     backDelay: 20,
     loop: true
 });
+const dropdow = document.querySelector(".drop-down");
+const list = document.querySelector(".listLang");
+const selected = document.querySelector(".selected");
+const selectedImg = document.querySelector(".selectedImg");
+
+dropdow.addEventListener('click', () => {
+    list.classList.toggle('showLangList');
+})

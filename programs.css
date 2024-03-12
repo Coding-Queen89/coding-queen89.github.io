@@ -101,9 +101,10 @@
 }
 .program:nth-child(3){
     background-image: url(images/boy.png);
-    background-position: left;
+    background-position-x: 95%;
+    background-position-y: 80%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 20%;
 }
 .barad-smile{
     display: flex;
@@ -185,6 +186,9 @@
     }
     .dental-lists li{
         padding: 0 1rem 0 0;
+    }
+    .program:nth-child(3){
+        background-size: 40%;
     }
 }
 

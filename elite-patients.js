@@ -26,6 +26,14 @@ window.onload = function () {
         mobile_menu.classList.toggle('is-active');
     });
 }
+const dropdow = document.querySelector(".drop-down");
+const list = document.querySelector(".listLang");
+const selected = document.querySelector(".selected");
+const selectedImg = document.querySelector(".selectedImg");
+
+dropdow.addEventListener('click', () => {
+    list.classList.toggle('showLangList');
+})
 gsap.from('.logo div', {
     opacity: 0,
     delay: 1,

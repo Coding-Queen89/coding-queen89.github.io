@@ -15,6 +15,35 @@
 
 <body>
     <header>
+        <div class="languages details">
+            <div class="drop-down">
+                <div class="LangWrapper">
+                    <img src="images/english.jpg" alt="">
+                    <div class="selected"><a href="" class="normal" style="color: black;">English</a></div>
+                </div>
+                <i class="bx bx-chevron-down arrow" style="color: black;"></i>
+
+                <div class="listLang">
+                    <div class="langItem">
+                        <img src="images/saudi.png" alt="">
+                        <div class="textLang"><a href="fillings.html" class="normal">Arabic</a></div>
+                    </div>
+                    <div class="langItem">
+                        <img src="images/english.jpg" alt="">
+                        <div class="textLang"><a href="" class="normal">English</a></div>
+                    </div>
+                    <div class="langItem">
+                        <img src="images/france.png" alt="">
+                        <div class="textLang"><a href="" class="normal">French</a></div>
+                    </div>
+                    <div class="langItem">
+                        <img src="images/germany.jpg" alt="">
+                        <div class="textLang"><a href="" class="normal">German</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         <div class="container">
             <div class="logo">
                 <img class="star star-s4" src="images/aiLogo.png" alt="">
@@ -184,8 +213,6 @@
             <div class="keyboard"></div>
         </div>
     </div>
-    <script src="particles.min.js"></script>
-    <script src="teeth.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script>
@@ -236,7 +263,14 @@
                 scrollTrigger: star
             })
         })
+        const dropdow = document.querySelector(".drop-down");
+        const list = document.querySelector(".listLang");
+        const selected = document.querySelector(".selected");
+        const selectedImg = document.querySelector(".selectedImg");
 
+        dropdow.addEventListener('click', () => {
+            list.classList.toggle('showLangList');
+        })
     </script>
 </body>
 

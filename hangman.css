@@ -58,6 +58,7 @@ body{
 }
 .word-display .letter.guessed{
     border-color: transparent;
+    font-size: 2.5rem;
     margin: -40px 0 35px;
 }
 .game-box h4{
@@ -130,10 +131,10 @@ body{
     padding: 30px;
 }
 .game-modal h4{
-    font-size: 1.53rem;
+    font-size: 2.5rem;
 }
 .game-modal p{
-    font-size: 1.15rem;
+    font-size: 2rem;
     margin: 15px 0 30px;
     font-weight: 500;
 }

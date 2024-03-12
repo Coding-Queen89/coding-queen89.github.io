@@ -16,7 +16,7 @@ particlesJS('frost',
   {
     "particles": {
       "number": {
-        "value": 70,
+        "value": 100,
         "density": {
           "enable": true,
           "value_area": 800
@@ -36,7 +36,7 @@ particlesJS('frost',
           "nb_sides": 5
         },
         "image": {
-          "src": "images/snow.png",
+          "src": "images/snowflake-removebg-preview.png",
           "width": 100,
           "height": 100
         }
