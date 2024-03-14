@@ -6,6 +6,7 @@
 }
 .hamburger .bar, .hamburger::after, .hamburger::before{
     background-color: #000043;
+    background-color: #24262b;
 }
 .submenu li:hover {
     background-color: #c6d5dc;
