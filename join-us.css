@@ -22,6 +22,9 @@
     .navlist a{color: #f6f7f7;}
     .submenu, .submenu li:hover{background-color: transparent;}
 }
+html{
+    background-color: #bbbcbb;
+}
 /* --------------BANNER------------ */
 .banner{
     display: flex;

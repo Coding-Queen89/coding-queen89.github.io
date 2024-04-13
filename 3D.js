@@ -37,7 +37,7 @@ loader.load(model_local_directory, function(gltf) {
     obj.scene.scale.set(13,13,13);
     let mm = gsap.matchMedia();
     mm.add("(max-width: 801px)", () =>{
-        renderer.setSize(window.outerWidth-120,500);
+        renderer.setSize(window.outerWidth-120,600);
         obj.scene.scale.set(4,4,4);
     });
     scene.add(obj.scene);

@@ -373,8 +373,17 @@ html{
         flex-direction: column;
     }
 }
-.voldy{
+.phone-convo{
     background-color: #BBBCBB;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    background-image: url(images/snowFlake.png);
+    /* background-size: contain; */
+    background-position: -110%;
+    background-repeat: repeat-y;
+}
+.voldy{
     display: flex;
     gap: 20px;
     max-width: 1600px;
@@ -382,13 +391,9 @@ html{
     padding-top: 65px;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    background-image: url(images/snowFlake.png);
-    /* background-size: contain; */
-    background-position: -110%;
-    background-repeat: repeat-y;
+    align-items: flex-end;
 }
-.voldy h1{
+.phone-convo h1{
     text-align: center;
 }
 .voldemort, .bella, .barad{
