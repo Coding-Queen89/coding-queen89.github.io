@@ -572,7 +572,7 @@ header .container {
 }
 .soundbutton{
     position: fixed;
-    bottom: 5vh;
+    bottom: 6vh;
     left: 5vh;
     cursor: pointer;
     width: 50px;
@@ -587,8 +587,8 @@ header .container {
 }
 .bot{
     position: fixed;
-    right: 40px;
-    bottom: 35px;
+    right: 5vh;
+    bottom: 6vh;
     height: 50px;
     width: 50px;
     color: white;
@@ -606,4 +606,14 @@ header .container {
 .bot i{
     font-size: 3rem;
     color: white;
+}
+.copy-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px 1px;
+}
+.copy-right p{
+    color: #7393B3;
 }
